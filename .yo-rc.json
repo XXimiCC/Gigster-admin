@@ -1,0 +1,15 @@
+{
+  "generator-backbone": {
+    "appPath": "app",
+    "appName": "GigAdmin",
+    "testFramework": "mocha",
+    "templateFramework": "lodash",
+    "includeRequireJS": false,
+    "sassBootstrap": true,
+    "coffee": false
+  },
+  "generator-mocha": {
+    "ui": "bdd",
+    "rjs": false
+  }
+}

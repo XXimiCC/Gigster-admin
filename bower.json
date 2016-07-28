@@ -1,0 +1,27 @@
+{
+  "name": "gig-admin",
+  "version": "0.0.0",
+  "dependencies": {
+    "bootstrap-sass-official": "~3.3.1",
+    "jquery": "~2.1.0",
+    "backbone": "~1.1.0",
+    "lodash": "~2.4.1",
+    "layoutmanager": "^1.0.0",
+    "gentelella": "^1.3.0",
+    "font-awesome": "^4.6.3"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  },
+  "resolutions": {
+    "backbone": ">=1.2.1"
+  },
+  "overrides": {
+    "gentelella": {
+      "main": [
+        "build/js/custom.min.js"
+      ]
+    }
+  }
+}

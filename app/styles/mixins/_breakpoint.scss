@@ -1,0 +1,52 @@
+$large-tablet: 999px;
+$tablet:768px;
+
+$small-devices:767px; //less then 768 (tablet)
+
+$large-mobile: 620px;
+$hor-mobile: 480px;
+$ver-mobile:320px;
+
+@mixin breakpoint ($breakpoint, $breakpoint_two: 0) {
+  @if $breakpoint == "large-tablet" {
+       @media (max-width: $large-tablet) {
+           @content;
+       }
+   }
+
+   @else if $breakpoint == "tablet" {
+       @media (max-width: $tablet) {
+           @content;
+       }
+   }
+
+    @else if $breakpoint == "large-mobile" {
+       @media (max-width: $large-mobile) {
+           @content;
+       }
+   	}
+
+   	@else if $breakpoint == "hor-mobile" {
+       @media (max-width: $hor-mobile) {
+           @content;
+       }
+   	}
+
+   	@else if $breakpoint_two > 0 {
+       @media screen and (min-width: $breakpoint) and (max-width: $breakpoint_two) {
+           @content;
+       }
+   	}
+
+   	@else if $breakpoint == "two-points" {
+       @media (max-width: $ver-mobile) {
+           @content;
+       }
+   	}
+
+   @else {
+       @media (max-width: $breakpoint) {
+           @content;
+       }
+   }
+}
