@@ -23,8 +23,15 @@ window.GigAdmin = {
         this.Router = new GigAdmin.Routers.Application();
 
         this.Layout = new Backbone.Layout({
-            el: '.gig-main'
+            el: '.gig-main',
+            views: {
+                '.nav-container': new GigAdmin.Views.LeftNavigation(),
+                '.top_nav': new GigAdmin.Views.TopNavigation(),
+                '.content': new GigAdmin.Views.Content(),
+            }
         });
+
+        this.Layout.render();
 
 
         Backbone.history.start();

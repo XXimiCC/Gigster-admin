@@ -10,28 +10,16 @@ body {
     background: #fafafa;
     color: #000;
 }
+.nav-container{
+    background: #2A3F54;
+    padding: 0;
+    width: 230px;
+}
 
-//.wrapper {
-//    position: relative;
-//    min-height: 100%;
-//    min-width: 1000px;
-//    margin: auto 0 auto;
-//
-//
-//    @include breakpoint($large-tablet) {
-//        min-width: 100%;
-//        max-width: 100%;
-//    }
-//}
-//
-//.container {
-//    margin-right: 0;
-//    margin-left: 0;
-//    padding-left: 0;
-//    padding-right: 0;
-//    width: 100%;
+//.main_container {
+//    background-color: #2A3F54;
 //}
 
-.main_container {
-    background-color: #2A3F54;
+.logo {
+    background: url(../images/logo.svg) center no-repeat;
 }

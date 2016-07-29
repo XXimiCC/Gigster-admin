@@ -17,6 +17,8 @@ GigAdmin.Routers = GigAdmin.Routers || {};
                 path = Backbone.history.location.hash,
                 isLoginPage = fragment === 'login';
 
+
+            //TODO Understand why login page didn't hide when login success
             if (!isAuth && !isLoginPage) {
                 GigAdmin.session.redirectFrom = path;
                 Backbone.history.navigate('login', { trigger : true });
@@ -35,11 +37,11 @@ GigAdmin.Routers = GigAdmin.Routers || {};
         },
 
         index: function () {
-            GigAdmin.Layout.setView('.wrapper .container', new GigAdmin.Views.Dashboard()).render();
+
         },
 
         login: function () {
-            GigAdmin.Layout.setView('.wrapper .container', new GigAdmin.Views.LoginPage({redirectTo: GigAdmin.session.redirectFrom})).render();
+            GigAdmin.Layout.setView('.main_container', new GigAdmin.Views.LoginPage({redirectTo: GigAdmin.session.redirectFrom})).render();
         },
 
         all: function () {
