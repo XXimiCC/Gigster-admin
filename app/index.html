@@ -12,25 +12,26 @@
     </head>
     <body class="gig-main nav-md">
 
-        <div class="wrapper clearfix">
-          <header></header>
+        <div class="wrapper">
           <div class="container"></div>
-
-          <div class="stop"></div>
         </div>
-
-        <div class="modal-windows"></div>
-
-
-
-        <footer class="js-footer clearfix"></footer>
-
 
         <!-- build:js scripts/vendor.js -->
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/lodash/dist/lodash.compat.js"></script>
         <script src="bower_components/backbone/backbone.js"></script>
         <script src="bower_components/layoutmanager/backbone.layoutmanager.js"></script>
+        <script src="bower_components/backbone-relational/backbone-relational.js"></script>
+        <script src="bower_components/jquery-serialize-object/jquery.serialize-object.js"></script>
+        <script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
+        <script src="bower_components/jquery-form/jquery.form.js"></script>
+        <script src="bower_components/jquery-validation/dist/jquery.validate.js"></script>
+        <script src="bower_components/jquery.inputmask/dist/min/inputmask/inputmask.min.js"></script>
+        <script src="bower_components/jquery.inputmask/dist/min/inputmask/inputmask.date.extensions.min.js"></script>
+        <script src="bower_components/jquery.inputmask/dist/min/inputmask/jquery.inputmask.min.js"></script>
+        <script src="bower_components/jquery-dateFormat/dist/jquery-dateFormat.min.js"></script>
+        <script src="bower_components/selectize/dist/js/standalone/selectize.js"></script>
+        <script src="scripts/vendor/jquery-ui/jquery-ui.min.js"></script>
         <!-- endbuild -->
 
         <!-- build:js scripts/plugins.js -->
@@ -48,13 +49,23 @@
         <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js"></script>
         <!-- endbuild -->
 
+        <script src="config.js"></script>
+
         <!-- build:js({.tmp,app}) scripts/main.js -->
         <script src="scripts/main.js"></script>
+        <script src="scripts/core/utils.js"></script>
+        <script src="scripts/core/base-router.js"></script>
+        <script src="scripts/core/base-models.js"></script>
+        <script src="scripts/core/facebook.api.js"></script>
+        <script src="scripts/core/google.api.js"></script>
         <script src="scripts/templates.js"></script>
         <script src="scripts/routes/application.js"></script>
-        <script src="scripts/views/login/modal-login.js"></script>
         <script src="scripts/views/login/login.js"></script>
-        <script src="scripts/views/login/set-new-password.js"></script>
+        <script src="scripts/models/session.js"></script>
+        <script src="scripts/models/user.js"></script>
+        <script src="scripts/views/dashboard.js"></script>
         <!-- endbuild -->
+
+        <script async src="https://apis.google.com/js/client:platform.js?onload=initGooglePlus"></script>
     </body>
 </html>

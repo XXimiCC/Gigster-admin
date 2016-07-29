@@ -1,0 +1,112 @@
+.form-control {
+    border-radius: 2px;
+    border: 1px solid #c7c7cd;
+    height: 48px;
+    text-indent: 16px;
+    color: #000;
+    padding: 0;
+    box-shadow: none;
+    /*line-height: 100%;*/
+
+    /*box-shadow: none;*/
+    /* dell shadow in iphone */
+    -webkit-appearance: none;
+    font: {
+        family: 'avenir';
+        size: 14px;
+        weight: 400;
+    };
+
+    &:hover {
+        border-color: #a4aab3;
+    }
+
+    &_type_textarea {
+        resize: none;
+        min-height: 144px;
+        padding: 12px 16px;
+        text-indent: 0;
+        line-height: 20px;
+
+        &:disabled {
+            line-height: 20px;
+        }
+    }
+
+    &__height_auto {
+        min-height: auto;
+        height: auto;
+    }
+
+    &:focus {
+        border-color: $primary-color;
+        border-color: $primary-color;
+        -webkit-box-shadow: 0px 0px 4px 1px rgba(68, 219, 93, 0.42);
+        -moz-box-shadow: 0px 0px 4px 1px rgba(68, 219, 93, 0.42);
+        box-shadow: 0px 0px 4px 1px rgba(68, 219, 93, 0.42);
+    }
+
+    &_type_large {
+        height: 64px;
+        font-size: 18px;
+        font-family: 'Avenir Book';
+        color: #000;
+    }
+
+    &_size_34 {
+        height: 34px;
+        /*line-height: 33px;*/
+    }
+
+    &_size_40 {
+        height: 40px;
+        /*line-height: 39px;*/
+    }
+
+    &_size_56 {
+        height: 56px;
+    }
+
+    &__with_visa {
+        background: url(../images/visa.svg);
+        background-position: right center;
+        background-repeat: no-repeat;
+        background-color: #fff;
+    }
+}
+
+.form-control[disabled],
+.form-control[readonly],
+.form-control[readonly]:focus,
+.form-control[disabled]:focus {
+    border: 1px solid #c7c7cd;
+    outline: 0;
+    background: #fafafa;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.form-control[disabled]::-webkit-input-placeholder,
+.form-control[readonly]::-webkit-input-placeholder {
+    color: rgb(201, 196, 198);
+}
+
+.form-control-per {
+    position: absolute;
+    top: 18px;
+    right: 17px;
+    font-size: 14px;
+    font-family: 'avenir book';
+    color: $light-color;
+}
+
+.form-control-dol {
+    position: absolute;
+    top: 13px;
+    left: 19px;
+    font-size: 28px;
+    font-family: 'Avenir Book';
+    color: #000;
+    box-shadow: none;
+}

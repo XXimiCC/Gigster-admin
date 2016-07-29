@@ -1,0 +1,170 @@
+.sign-up--soc {
+  .has-error--text{
+    text-align: center;
+  }
+}
+
+.sign-up {
+  width: 468px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.21);
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.21);
+  background: #fff;
+
+  @include breakpoint($tablet) {
+    width: 100%;
+  }
+
+  &--cont {
+    padding: 32px 40px 24px;
+    text-align: center;
+
+    @include breakpoint($hor-mobile) {
+      padding: 32px 23px 48px;
+    }
+  }
+
+  &--forgot,
+  &--forgot:hover {
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: $primary-color;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+  }
+
+  &--img {
+    border-radius: 100%;
+    width: 160px;
+    height: 160px;
+    background: #f6f6f6;
+    overflow: hidden;
+    margin: 0 auto 20px;
+
+    img {
+      max-width: 100%;
+    }
+
+    @include breakpoint($hor-mobile) {
+      width: 92%;
+    }
+  }
+
+  &--title {
+    color: #000;
+    font-size: 22px;
+    line-height: 22px;
+    font-family: 'Avenir', arial;
+    font-weight: 500;
+    font-style: normal;
+    margin: 0 0 20px;
+
+    @include breakpoint($hor-mobile) {
+      font-size: 18px;
+      margin: 0 0 32px;
+    }
+  }
+
+  &--title_margin_4 {
+    margin-bottom: 4px;
+  }
+
+  &--text {
+    color: #000;
+    margin: 0 0 15px;
+
+    @include breakpoint($hor-mobile) {
+      color: #000;
+      margin: 0 0 32px;
+      line-height: 20px;
+    }
+  }
+
+  &--text02 {
+    color: #000;
+    line-height: 20px;
+    margin: 0 0 16px;
+  }
+
+  &--text-grey {
+    color: $light-color;
+    line-height: 18px;
+    padding: 0 10px;
+    margin: 0 0 30px;
+
+    a,
+    a:hover {
+      color: $light-color;
+      text-decoration: underline;
+    }
+  }
+
+  &--soc {
+    margin: 0 0 34px;
+  }
+
+  &--agree-text {
+    text-align: center;
+    color: $light-color;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 24px 0 0px;
+
+    a {
+      color: $light-color;
+      text-decoration: underline;
+    }
+  }
+
+  &--log-in, &--sign-up {
+    border-top: 1px solid #efeff4;
+    padding: 24px 0;
+    text-align: center;
+    color: $primary-color;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'Avenir', arial;
+    font-weight: 900;
+    font-style: normal;
+
+    a,
+    a:hover {
+      color: $primary-color;
+    }
+  }
+
+  &_position_center {
+    -moz-transform: translate(-50%, -50%) !important;
+    -ms-transform: translate(-50%, -50%) !important;
+    -webkit-transform: translate(-50%, -50%) !important;
+    -o-transform: translate(-50%, -50%) !important;
+    transform: translate(-50%, -50%) !important;
+    margin-left: auto !important;
+    margin-top: auto !important;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 9;
+  }
+
+  &--btn {
+    padding: 0;
+    min-width: 141px;
+  }
+
+  @include breakpoint($hor-mobile) {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.sign-up-min {
+  min-height: 420px;
+  padding: 64px 0 40px;
+}
